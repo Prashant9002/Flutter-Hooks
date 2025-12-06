@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'fragments/frag_1.dart';
 
 void main() {
   runApp(const Screen());
@@ -35,8 +36,13 @@ class fragment extends State<_Screen>{
         iconTheme: IconThemeData(
           color: Colors.purple
         ),
-        leading: Icon(
-          Icons.ac_unit
+        leading: IconButton(
+          icon: Icon(Icons.ac_unit),
+          onPressed: ()=>{
+            Navigator.push(context, 
+            MaterialPageRoute(builder: (context)=>App())
+            )
+          },
         ),
       ),
     );
