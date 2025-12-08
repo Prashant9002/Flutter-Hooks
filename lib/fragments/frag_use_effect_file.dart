@@ -22,7 +22,11 @@ class screen extends HookWidget{
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "use effect file"
+          "use effect file",
+          style: TextStyle(
+              color: Colors.purple,
+              fontWeight: FontWeight.bold
+          ),
         ),
       ),
 
@@ -68,7 +72,7 @@ class DialogBox extends HookWidget{
           return (){
             print("Thread 007 Widget life Cycle ended");
           };
-        }
+        },[] //<-- About This [] (Run this useEffect again ONLY when this value changes.)
     );
     return Container(
       height: 200,
