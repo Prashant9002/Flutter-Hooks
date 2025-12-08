@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'fragments/frag_1.dart';
+import 'fragments/frag_use_effect_file.dart';
 
 void main() {
   runApp(const Screen());
@@ -40,7 +41,7 @@ class fragment extends State<_Screen>{
           icon: Icon(Icons.ac_unit),
           onPressed: ()=>{
             Navigator.push(context, 
-            MaterialPageRoute(builder: (context)=>App())
+            MaterialPageRoute(builder: (context)=>AppSecond())
             )
           },
         ),

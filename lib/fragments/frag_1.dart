@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
 void main(){
-  return runApp(App());
+  return runApp(AppOne());
 }
 
-class App extends StatelessWidget{
+class AppOne extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return _App();
